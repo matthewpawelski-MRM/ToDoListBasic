@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: var(--primaryGray);
+    background-color: var(--trashRed);
     display: flex;
     justify-content: center;
     align-items: center;
