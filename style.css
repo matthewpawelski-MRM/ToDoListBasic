@@ -1,1 +1,13 @@
-/* styles */
+:root {
+    --trashRed: #fb9a9a;
+    --primaryGray: #cccccc;
+    --primaryPurple: #646fd4;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
