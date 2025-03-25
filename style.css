@@ -1,28 +1,55 @@
 :root {
-    --trashRed: #fb9a9a;
-    --primaryGray: #cccccc;
-    --primaryPurple: #646fd4;
+  --trashRed: #fb9a9a;
+  --primaryGray: #cccccc;
+  --primaryPurple: #646fd4;
+
+  /** Dark Theme primary colors */
+  --clr-primary-a0: #646fd4;
+  --clr-primary-a10: #787ed9;
+  --clr-primary-a20: #8a8dde;
+  --clr-primary-a30: #9c9ce3;
+  --clr-primary-a40: #adace8;
+  --clr-primary-a50: #bdbced;
+
+  /** Dark Theme surface colors */
+  --clr-surface-a0: #121212;
+  --clr-surface-a10: #282828;
+  --clr-surface-a20: #3f3f3f;
+  --clr-surface-a30: #575757;
+  --clr-surface-a40: #717171;
+  --clr-surface-a50: #8b8b8b;
 }
 
+
 body {
-    background-color: var(--primaryGray);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+  background-color: var(--primaryGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+  background-color: var(--clr-surface-a0);
+  color: white;
 }
 
 .mainContainer {
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mainContainer.dark-mode {
+    background-color: var(--clr-surface-a30);
+    box-shadow: 0 4px 8px rgba(100, 111, 212, 0.8);
 }
 
 .mainContainer ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
