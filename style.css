@@ -28,11 +28,25 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
+  position:relative;
 }
 
 body.dark-mode {
   background-color: var(--clr-surface-a0);
   color: white;
+}
+
+.modeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .mainContainer {
